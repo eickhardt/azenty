@@ -1,0 +1,285 @@
+@import "bootstrap/bootstrap";
+
+@btn-font-weight: 300;
+@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+
+body, label, .checkbox label {
+	font-weight: 300;
+}
+
+/* Below is custom by Daniel Eickhardt */
+@font-face {
+    font-family: utsaah;
+    src: url(../fonts/utsaah.ttf);
+}
+
+body {
+	font-family: utsaah;
+	font-size: 18px;
+}
+
+#topbar {
+	background: #333;
+	color: white;
+	font-size: 55px;
+	.container {
+		height: 100px;
+		font-weight: 600;
+		#header_logo {
+			margin-top: 12px;
+			a {
+				color: white !important;
+				&:hover {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+}
+
+#topnav {
+	background-position: 0px;
+	border: 0;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background: url(/img/top_bar.jpg);
+	background-repeat: repeat-x;
+	.container {
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+			padding-left: 0px;
+			.collapse {
+				padding-left: 0px;
+			}
+		}
+		@media (min-width: @screen-md) and (max-width: @screen-md-max) {
+			padding-left: 0px;
+			.collapse {
+				padding-left: 0px;
+			}
+		}
+		@media (min-width: @screen-lg) {
+			padding-left: 0px;
+			.collapse {
+				padding-left: 0px;
+			}
+		}
+		color: black;
+		.collapse, .collapsing {
+			@media (min-width: 1px) and (max-width: @screen-xs-max) {
+				.navbar-nav {
+					margin-top: 0px;
+					margin-bottom: 0px;
+					background: #333;
+				}
+			}
+			.dropdown {
+				.open .dropdown-menu {
+					background-color: #555;
+				}
+				ul {
+					border: 0;
+					padding: 0px;
+				}
+				ul li a {
+					font-size: 18px;
+					color: white;
+					background-color: #333;
+					transition: all 0.25s;
+					padding: 15px 35px;
+					&:hover {
+						background: white;
+						color: black;
+					}
+				}
+			}
+			ul li a {
+				color: white;
+				background-color: transparent;
+				transition: all 0.25s;
+				padding: 15px 35px;
+				&:hover {
+					background: white;
+					color: black;
+				}
+			}
+			ul li a.active {
+				color: black;
+				background: white;
+			}
+		}
+		.navbar-brand {
+			display: none;
+		}
+	}
+}
+
+#home_carousel_wrapper {
+	cursor: pointer;
+	@media (min-width: 1px) and (max-width: @screen-xs-max) { // max 767px
+		height: 180px;
+	}
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		height: 250px;
+	}
+	@media (min-width: @screen-md) and (max-width: @screen-md-max) {
+		height: 350px;
+	}
+	@media (min-width: @screen-lg) {
+		height: 500px;
+	}
+	#home_carousel {
+		display: none;
+		border: 0;
+		background: white;
+		a {
+			display: block;
+		}
+	}
+}
+
+[data-child-frame] {
+	border: 8px solid #333 !important;
+}
+
+[data-carousel-3d] [data-next-button]:before {
+	content: url("/img/arrow_right.png") !important;
+}
+[data-carousel-3d] [data-prev-button]:before {
+	content: url("/img/arrow_left.png") !important;
+}
+
+#home_page_content {
+	.row {
+		.three_box {
+			.box_wrapper {
+				-webkit-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+				box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+				position: relative;
+				min-height: 250px;
+				@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+					min-height: 220px;
+				}
+				border: 1px solid gray !important;
+				img {
+					position: absolute;
+	   				top: 50%;
+	    			left: 50%;
+	    			margin-right: -50%;
+	   				transform: translate(-50%, -50%);
+				}
+			}
+			p {
+				text-align: center;
+				padding: 10px;
+				margin-bottom: 30px;
+				margin-top: 10px;
+			}
+		}
+		.one_box {
+			text-align: center;
+			vertical-align: middle;
+			img {
+				margin-bottom: 30px;
+			}
+			p {
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+#footer_line {
+	background: url(/img/bot_bar.jpg);
+	width: 100%;
+	height: 15px;
+}
+
+#footer {
+	@media (min-width: 1px) and (max-width: @screen-xs-max) { // max 767px
+		font-size: 14px;
+	}
+	width: 100%;
+	color: white;
+	background: #333;
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.container > div {
+		width: 50%;
+		color: white;
+		display: inline-block;
+		margin-top: 20px;
+		div {
+			margin-bottom: 10px;
+			width: 49%;
+			display: inline-block;
+		}
+	}
+}
+
+#footer a {
+	color: white;
+	&:hover {
+		color: white;
+	}
+}
+
+.page_content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.reference {
+	img {
+		height: 110px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+}
+
+#webshops_page, #e_marketing_page, #g_infrastructure_page, #hardware_page {
+	.container {
+		p img {
+			@media (min-width: 1px) and (max-width: @screen-xs-max) { // max 767px
+				display: block;
+				float: none;
+				margin: 0 auto 20px auto;
+			}
+			max-height: 200px;
+			margin-bottom: 20px;
+			margin-left: 20px;
+			float: right;
+		}
+	}
+}
+
+.footer_related_wrapper {
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    @media (min-width: 1px) and (max-width: @screen-xs-max) { // max 767px
+   		margin: 0 auto -165px;
+	}
+    margin: 0 auto -185px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.push {
+	@media (min-width: 1px) and (max-width: @screen-xs-max) { // max 767px
+    	height: 165px;
+	}
+    height: 185px;
+}
+
+.fourohfour {
+	font-size: 160px;
+}

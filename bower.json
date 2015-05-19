@@ -1,0 +1,27 @@
+{
+  "name": "azenty",
+  "version": "1.0",
+  "authors": [
+    "Daniel Eickhardt <dde@azenty.com>"
+  ],
+  "description": "Azenty website bower things",
+  "main": "bower_main_file",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "keyword"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
