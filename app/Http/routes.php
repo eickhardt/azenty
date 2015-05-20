@@ -22,6 +22,9 @@ Route::get('products/google-infrastructure', [
 Route::get('products/hardware', [
     'as' => 'hardware', 'uses' => 'PagesController@showHardware'
 ]);
+Route::get('products/b2b-webshops', [
+    'as' => 'webshopb2b', 'uses' => 'PagesController@showWebshopB2B'
+]);
 
 /**
  * References page
@@ -56,11 +59,4 @@ Route::get('contact', [
  */
 Route::get('omnichannel', [
     'as' => 'omnichannel', 'uses' => 'PagesController@showOmnichannel'
-]);
-
-/**
- * Webshop B2B page
- */
-Route::get('webshopb2b', [
-    'as' => 'webshopb2b', 'uses' => 'PagesController@showWebshopB2B'
 ]);

@@ -32,7 +32,7 @@
 					
 				<div class="three_box col-sm-4 col-sm-12">
 					<div class="box_wrapper">
-						<a href="{{ route('webshops') }}"><img src="/img/menu1_2.png" alt="Shop"></a>
+						<a href="{{ route('e-marketing') }}"><img src="/img/menu1_2.png" alt="Shop"></a>
 					</div>
 					<p>I dag styrer teknologisk kyndige virksomheder kunder til deres hjemmeside ved hjælp af søgemaskineoptimering. Men hvordan får du så dine online besøgende til at købe? Selvfølgelig kan du betale en masse for statistik, der giver dig indsigt i de potentielle kundernes indkøbsadfærd. Ikke her - hos Azenty får du Prestashop's berømte statistik direkte i "back-office" af din shop, hvor du kan følge med i dine kunders adfærd!
 					{{-- Nulla nec sem sed eros commodo euismod. Phasellus massa lorem, ornare a velit non, pharetra porta metus. Duis ac mi malesuada, iaculis lectus id, cursus odio. Phasellus eu metus sit amet nulla tristique aliquet eget nec lorem. Maecenas ultricies finibus lectus, nec blandit orci porttitor non. Suspendisse lectus arcu, luctus nec tempor scelerisque, tempor a lacus. Donec in lobortis turpis. --}}</p>
