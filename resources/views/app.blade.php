@@ -61,11 +61,15 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle {{ ( explode('/', Request::path())[0] == 'products' ? 'active' : '') }}" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Produkter <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'webshops' ? 'active' : '') : '' }}" href="{{ route('webshops') }}">Webshops</a></li>
+							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'webshops' ? 'active' : '') : '' }}" href="{{ route('webshops') }}">Webshop</a></li>
+							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'webshopb2b' ? 'active' : '') : '' }}" href="{{ route('webshopb2b') }}">Webshop B2B</a></li>
 							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'e-marketing' ? 'active' : '') : '' }}" href="{{ route('e-marketing') }}">E-marketing</a></li>
 							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'google-infrastructure' ? 'active' : '') : '' }}" href="{{ route('google-infrastructure') }}">Google Infrastruktur</a></li>
 							<li><a class="{{ $check_products_path ? ( explode('/', Request::path())[1] == 'hardware' ? 'active' : '') : '' }}" href="{{ route('hardware') }}">Hardware</a></li>
 						</ul>
+					</li>
+					<li>
+						<a class="{{ (Request::path() == 'omnichannel' ? 'active' : '') }}" href="{{ route('omnichannel') }}">Omnichannel</a>
 					</li>
 					<li>
 						<a class="{{ (Request::path() == 'references' ? 'active' : '') }}" href="{{ route('references') }}">Referencer</a>
@@ -118,7 +122,7 @@
 				</div>
 				<div>
 					<p><a href="#">Handelsbetingelser</a></p>
-					<p>Kunde hos Azenty?</p>
+					<p><a href="{{ route('omnichannel') }}">Omnicahnnel</a></p>
 					<p>Powered by <a href="http://www.laravel.com/">Laravel</a></p>
 				</div>
 			</div>

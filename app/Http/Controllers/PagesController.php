@@ -94,4 +94,24 @@ class PagesController extends Controller {
 	{
 		return view('pages.contact');
 	}
+
+	/**
+	 * Show the Omnichannel page.
+	 *
+	 * @return Response
+	 */
+	public function showOmnichannel()
+	{
+		return view('pages.omnichannel');
+	}
+
+	/**
+	 * Show the webshop B2B page.
+	 *
+	 * @return Response
+	 */
+	public function showWebshopB2B()
+	{
+		return view('pages.webshopsb2b');
+	}
 }

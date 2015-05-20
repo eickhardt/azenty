@@ -50,3 +50,17 @@ Route::get('about', [
 Route::get('contact', [
     'as' => 'contact', 'uses' => 'PagesController@showContact'
 ]);
+
+/**
+ * Omnichannel page
+ */
+Route::get('omnichannel', [
+    'as' => 'omnichannel', 'uses' => 'PagesController@showOmnichannel'
+]);
+
+/**
+ * Webshop B2B page
+ */
+Route::get('webshopb2b', [
+    'as' => 'webshopb2b', 'uses' => 'PagesController@showWebshopB2B'
+]);

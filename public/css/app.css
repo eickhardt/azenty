@@ -6316,7 +6316,7 @@ body {
   color: white;
   background-color: #333;
   transition: all 0.25s;
-  padding: 15px 35px;
+  padding: 15px 26px;
 }
 #topnav .container .collapse .dropdown ul li a:hover,
 #topnav .container .collapsing .dropdown ul li a:hover {
@@ -6328,7 +6328,7 @@ body {
   color: white;
   background-color: transparent;
   transition: all 0.25s;
-  padding: 15px 35px;
+  padding: 15px 26px;
 }
 #topnav .container .collapse ul li a:hover,
 #topnav .container .collapsing ul li a:hover {
@@ -6469,6 +6469,8 @@ body {
   margin-bottom: 30px;
 }
 #webshops_page .container p img,
+#omni_page .container p img,
+#webshopsb2b_page .container p img,
 #e_marketing_page .container p img,
 #g_infrastructure_page .container p img,
 #hardware_page .container p img {
@@ -6479,6 +6481,8 @@ body {
 }
 @media (min-width: 1px) and (max-width: 767px) {
   #webshops_page .container p img,
+  #omni_page .container p img,
+  #webshopsb2b_page .container p img,
   #e_marketing_page .container p img,
   #g_infrastructure_page .container p img,
   #hardware_page .container p img {
